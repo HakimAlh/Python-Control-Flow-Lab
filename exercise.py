@@ -103,10 +103,66 @@ check_voting_eligibility()
 # - Convert the string input to an integer using `int()`.
 # - Apply conditional logic to perform the correct age calculation based on the dog's age.
 
-def calculate_dog_years():
-    int(input("Input a dog's age: "))
+# def calculate_dog_years():
+#     int(input("Input a dog's age: "))
     
 
 
-# Call the function
-calculate_dog_years()
+# # Call the function
+# calculate_dog_years()
+
+
+# Exercise 4: Weather Advice
+#
+# Write a Python script named `weather_advice` that provides clothing advice based on weather conditions.
+#
+# Requirements:
+# - The script should prompt the user to enter if it is cold (yes/no).
+# - Then, ask if it is raining (yes/no).
+# - Use logical operators to determine clothing advice:
+#   - If it is cold AND raining, print "Wear a waterproof coat."
+#   - If it is cold BUT NOT raining, print "Wear a warm coat."
+#   - If it is NOT cold but raining, print "Carry an umbrella."
+#   - If it is NOT cold AND NOT raining, print "Wear light clothing."
+#
+# Hints:
+# - Use logical operators (`AND`, `OR`, `NOT`) in your if statements to handle multiple conditions.
+
+def weather_advice():
+    Cold = input('Is it cold? Yes or no?')
+    Rain = input('Is it raining? Yes or no?')
+    if Cold == 'Yes' or 'yes' and Rain == 'Yes' or 'yes':
+        return print("Yikes.. use a waterproof coat. Don't get sick!")
+    if Cold == 'Yes' or 'yes' and Rain == 'No' or 'no':
+        return print("Aha! Warm coat. Wear it, it'll keep you warm!")
+#     if Cold == 'No' or 'no' and Rain == 'Yes' or 'yes':
+#         return
+#     if Cold == False and Rain == True:
+#         return print("You'll catch a cold, use an umbrella!")
+#     if Cold == 'No' or 'no' and Rain == 'No' or 'no':
+#         return
+#     if Cold == False and Rain == False:
+#         return print("Just wear light clothes. You'll be fine, it's sunny!")
+
+# # Call the function
+weather_advice()
+
+
+# ====================================== I wanna keep my old code just to show my old thinking process
+# if Cold == 'Yes' or 'yes' and Rain == 'Yes' or 'yes':
+#         return
+#     if Cold == True and Rain == True:
+#         return print("Yikes.. use a waterproof coat. Don't get sick!")
+#     if Cold == 'Yes' or 'yes' and Rain == 'No' or 'no':
+#         return
+#     if Cold == True and Rain == False:
+#         return print("Aha! Warm coat. Wear it, it'll keep you warm!")
+#     if Cold == 'No' or 'no' and Rain == 'Yes' or 'yes':
+#         return
+#     if Cold == False and Rain == True:
+#         return print("You'll catch a cold, use an umbrella!")
+#     if Cold == 'No' or 'no' and Rain == 'No' or 'no':
+#         return
+#     if Cold == False and Rain == False:
+#         return print("Just wear light clothes. You'll be fine, it's sunny!")
+# ==============================================================
