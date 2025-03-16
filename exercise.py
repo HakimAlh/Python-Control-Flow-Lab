@@ -131,18 +131,14 @@ check_voting_eligibility()
 def weather_advice():
     Cold = input('Is it cold? Yes or no?')
     Rain = input('Is it raining? Yes or no?')
-    if Cold == 'Yes' or 'yes' and Rain == 'Yes' or 'yes':
+    if Cold == 'Yes' and Rain == 'Yes':
         return print("Yikes.. use a waterproof coat. Don't get sick!")
-    if Cold == 'Yes' or 'yes' and Rain == 'No' or 'no':
+    if Cold == 'Yes' and Rain == 'No':
         return print("Aha! Warm coat. Wear it, it'll keep you warm!")
-#     if Cold == 'No' or 'no' and Rain == 'Yes' or 'yes':
-#         return
-#     if Cold == False and Rain == True:
-#         return print("You'll catch a cold, use an umbrella!")
-#     if Cold == 'No' or 'no' and Rain == 'No' or 'no':
-#         return
-#     if Cold == False and Rain == False:
-#         return print("Just wear light clothes. You'll be fine, it's sunny!")
+    elif Cold == 'No' and Rain == 'Yes':
+        return print("You'll catch a cold, use an umbrella!")
+    elif Cold == 'No' or 'no' and Rain == 'No' or 'no':
+        return print("Just wear light clothes. You'll be fine, it's sunny!")
 
 # # Call the function
 weather_advice()
